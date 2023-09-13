@@ -1,70 +1,167 @@
-# Getting Started with Create React App
+# Disney-plus-app (clone project)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 배포 주소: https://react-disney-plus-22cb3.web.app
 
-## Available Scripts
+- 개발기간<br/>
+  2023.08.12 ~ 2023.08.13
 
-In the project directory, you can run:
+- PC버전(반응형)
+  ![image](/disney_plus/public/readmeImg/pc_1.png)
 
-### `npm start`
+# 프로젝트 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+react, vanilla.js 로 disney-plus-app 기존에 있던 웹앱을 클론 코딩하였습니다.
+해외 영화 api 제공 하는곳에서 key를 발급받아
+axios를 사용하여 영화 데이터를 받아 캐러셀, 모달창, 상세페이지
+사용하였습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 시작 가이드
 
-### `npm test`
+- ### frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+  $ cd disney_plus
+  $ npm install
+  $ npm run start
+```
 
-### `npm run build`
+# Stacks
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Environment**<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">&nbsp;
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+&nbsp;<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Config**<br/>
 
-### `npm run eject`
+<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"><br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Development**<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://img.shields.io/badge/javascript-20232a?style=for-the-badge&logo=javascript&logoColor=F7DF1E">&nbsp;
+<img src="https://img.shields.io/badge/react-20232a?style=for-the-badge&logo=react&logoColor=5dcfee">&nbsp;
+<img src="https://img.shields.io/badge/styled_componets-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">&nbsp;
+<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white">&nbsp;
+<img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"><br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 화면구성(반응형)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| 로그인전, 로그아웃후 보이는 페이지                | 메인페이지(로그인후)                             |
+| ------------------------------------------------- | ------------------------------------------------ |
+| ![image](/disney_plus/public/readmeImg/pc_1.png)  | ![image](/disney_plus/public/readmeImg/pc_2.png) |
+| 메인페이지에서 배너, 상단Nav, 캐러셀              | 캐러셀에 있는 영화클릭후 나오는 모달창           |
+| ![image](/disney_plus/public/readmeImg/pc_3.png)  | ![image](/disney_plus/public/readmeImg/pc_4.png) |
+| 상단 Nav에 있는 검색 input 사용할때 나오는 페이지 | 상단 Nav에 있는 검색 input 사용후 나오는 페이지  |
+| ![image](/disney_plus/public/readmeImg/pc_5.png)  | ![image](/disney_plus/public/readmeImg/pc_6.png) |
+| 배너에 있는 Play 버튼 누를때 나오는 유튜브        |
+| ![image](/disney_plus/public/readmeImg/pc_7.png)  |
 
-## Learn More
+# 아키텍쳐
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 디렉토리 구조
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+📦disney_plus_git
+ ┗ 📂disney_plus
+ ┃ ┣ 📂public
+ ┃ ┃ ┣ 📂images
+ ┃ ┃ ┃ ┣ 📜cta-logo-one.png
+ ┃ ┃ ┃ ┣ 📜cta-logo-one.svg
+ ┃ ┃ ┃ ┣ 📜cta-logo-two.png
+ ┃ ┃ ┃ ┣ 📜group-icon.png
+ ┃ ┃ ┃ ┣ 📜home-background.png
+ ┃ ┃ ┃ ┣ 📜home-icon.svg
+ ┃ ┃ ┃ ┣ 📜login-background.jpg
+ ┃ ┃ ┃ ┣ 📜logo.svg
+ ┃ ┃ ┃ ┣ 📜movie-icon.svg
+ ┃ ┃ ┃ ┣ 📜original-icon.svg
+ ┃ ┃ ┃ ┣ 📜play-icon-black.png
+ ┃ ┃ ┃ ┣ 📜play-icon-white.png
+ ┃ ┃ ┃ ┣ 📜search-icon.svg
+ ┃ ┃ ┃ ┣ 📜series-icon.svg
+ ┃ ┃ ┃ ┣ 📜slider-badag.jpg
+ ┃ ┃ ┃ ┣ 📜slider-badging.jpg
+ ┃ ┃ ┃ ┣ 📜slider-scale.jpg
+ ┃ ┃ ┃ ┣ 📜slider-scales.jpg
+ ┃ ┃ ┃ ┣ 📜viewers-disney.png
+ ┃ ┃ ┃ ┣ 📜viewers-marvel.png
+ ┃ ┃ ┃ ┣ 📜viewers-national.png
+ ┃ ┃ ┃ ┣ 📜viewers-pixar.png
+ ┃ ┃ ┃ ┣ 📜viewers-starwars.png
+ ┃ ┃ ┃ ┗ 📜watchlist-icon.svg
+ ┃ ┃ ┣ 📂readmeImg
+ ┃ ┃ ┃ ┣ 📜pc_1.png
+ ┃ ┃ ┃ ┣ 📜pc_2.png
+ ┃ ┃ ┃ ┣ 📜pc_3.png
+ ┃ ┃ ┃ ┣ 📜pc_4.png
+ ┃ ┃ ┃ ┣ 📜pc_5.png
+ ┃ ┃ ┃ ┣ 📜pc_6.png
+ ┃ ┃ ┃ ┗ 📜pc_7.png
+ ┃ ┃ ┣ 📂videos
+ ┃ ┃ ┃ ┣ 📜disney.mp4
+ ┃ ┃ ┃ ┣ 📜marvel.mp4
+ ┃ ┃ ┃ ┣ 📜national-geographic.mp4
+ ┃ ┃ ┃ ┣ 📜pixar.mp4
+ ┃ ┃ ┃ ┗ 📜star-wars.mp4
+ ┃ ┃ ┣ 📜favicon.ico
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┣ 📜logo192.png
+ ┃ ┃ ┣ 📜logo512.png
+ ┃ ┃ ┣ 📜manifest.json
+ ┃ ┃ ┗ 📜robots.txt
+ ┃ ┣ 📂src
+ ┃ ┃ ┣ 📂api
+ ┃ ┃ ┃ ┣ 📜axios.js : api key, axios instance 생성
+ ┃ ┃ ┃ ┗ 📜request.js : api baseUrl 뒤에 붙이는 주소
+ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┣ 📂common : 공통으로 사용하는 기능 모아둔 폴더
+ ┃ ┃ ┃ ┃ ┗ 📂utilities
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜index.js
+ ┃ ┃ ┃ ┗ 📂units : 1개이상 재사용하는 컴포넌트 폴더
+ ┃ ┃ ┃ ┃ ┣ 📂banner
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜Banner.css
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜Banner.styled.js : css in js
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜index.js : banner 광고, play버튼 누를때 유튜브 영상 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📂category
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜Category.styled.js : css in js
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜index.js : category hover시 영상 나오는 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📂movieModal
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜index.js : 캐러셀 이미지 클릭시 나오는 모달 컴포넌트
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜movieModal.css : css in js
+ ┃ ┃ ┃ ┃ ┣ 📂nav
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜index.js : 위에 nav, 스크롤 이벤트, 로그인, 로그아웃 관한 컴포넌트
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜Nav.styled.js : css in js
+ ┃ ┃ ┃ ┃ ┗ 📂row
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜index.js : swiper를 사용하여 캐러셀 생성
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜Row.css: swiper 커스텀 css
+ ┃ ┃ ┣ 📂hooks
+ ┃ ┃ ┃ ┣ 📜useDebounce.js : 검색할때 디바운스 사용하기 위하여 제작하기 위한 파일
+ ┃ ┃ ┃ ┗ 📜useOnclickOutSide.js : 모달창 띄운후 외부를 클릭해도 닫히도록 제작하기 위한 파일
+ ┃ ┃ ┣ 📂pages
+ ┃ ┃ ┃ ┣ 📂DetailPage : 영화 검색 후 원하는 영화 클릭시 나오는 페이지
+ ┃ ┃ ┃ ┃ ┗ 📜index.js
+ ┃ ┃ ┃ ┣ 📂LoginPage : 로그인 하기전 나오는 페이지
+ ┃ ┃ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┃ ┃ ┗ 📜LoginPagestyled.js : css in js
+ ┃ ┃ ┃ ┣ 📂MainPage : 로그인 후 나오는 페이지
+ ┃ ┃ ┃ ┃ ┗ 📜index.js
+ ┃ ┃ ┃ ┗ 📂SearchPage : 검색할때 나오는 페이지
+ ┃ ┃ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┃ ┃ ┗ 📜SearchPage.css
+ ┃ ┃ ┣ 📜App.css
+ ┃ ┃ ┣ 📜App.js : layout 구성 -> route로 path 설정
+ ┃ ┃ ┣ 📜App.test.js
+ ┃ ┃ ┣ 📜firebase.js
+ ┃ ┃ ┣ 📜index.css
+ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┣ 📜logo.svg
+ ┃ ┃ ┣ 📜reportWebVitals.js
+ ┃ ┃ ┗ 📜setupTests.js
+ ┃ ┣ 📜.firebaserc
+ ┃ ┣ 📜.gitignore
+ ┃ ┣ 📜firebase.json
+ ┃ ┣ 📜package-lock.json
+ ┃ ┣ 📜package.json
+ ┃ ┗ 📜README.md
+```
