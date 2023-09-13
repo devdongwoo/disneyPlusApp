@@ -1,6 +1,6 @@
 # Disney-plus-app (clone project)
 
-- 배포 주소: https://react-disney-plus-22cb3.web.app
+- 배포 주소(firebase): https://react-disney-plus-22cb3.web.app
 
 - 개발기간<br/>
   2023.08.12 ~ 2023.08.13
